@@ -8,5 +8,5 @@ Implementações dos algoritmos e modelos estudados na disciplina de teoria de g
 - `Python`
 
 ## Algoritmos implementados
-- [x] Busca em Profundidade
+- [] Busca em Profundidade
 - [] Busca em Largura
