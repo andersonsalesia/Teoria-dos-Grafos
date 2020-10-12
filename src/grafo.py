@@ -1,3 +1,5 @@
+from vertice import Vertice
+
 class Grafo:
   def __init__(self, nome):
     self.nome = nome
@@ -11,6 +13,10 @@ class Grafo:
 
   def __repr__(self):
     return f"{self.vertices}"
+
+  
+  def getAdjacentes(self, vertice: Vertice) -> list:
+    return vertice.arestas
   
   def ehRegular(self) -> bool:
     primeiro_vertice = self.vertices[0]
