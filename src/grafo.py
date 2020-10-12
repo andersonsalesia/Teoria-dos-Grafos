@@ -19,3 +19,9 @@ class Grafo:
       if vertice.numero_de_arestas() != tamanho_primeiro_vertice:
         return False
     return True
+
+  def ehCompleto(self) -> bool:
+    for vertice in self.vertices:
+      if len(vertice.arestas) != (self.numero_de_vertices() - 1):
+        return False
+    return True
