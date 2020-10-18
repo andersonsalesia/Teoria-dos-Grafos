@@ -1,4 +1,4 @@
-from vertice import Vertice
+from .vertice import Vertice
 
 class Grafo:
   def __init__(self, nome):
@@ -11,10 +11,6 @@ class Grafo:
   def numero_de_vertices(self):
     return len(self.vertices)
 
-  def __repr__(self):
-    return f"{self.vertices}"
-
-  
   def getAdjacentes(self, vertice: Vertice) -> list:
     return vertice.arestas
   
@@ -31,3 +27,9 @@ class Grafo:
       if len(vertice.arestas) != (self.numero_de_vertices() - 1):
         return False
     return True
+  
+  def ehConexo(self) -> bool:
+    pass
+
+  #  def __repr__(self) -> None:
+    #  return f"{self.vertices}"

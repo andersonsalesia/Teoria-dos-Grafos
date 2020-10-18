@@ -1,16 +1,16 @@
-from grafo import Grafo
-from vertice import Vertice
+from struct import grafo, vertice
+from utils.util import Busca
 
 # Instanciação da classe Grafo
-grafo = Grafo('G1')
+grafo = grafo.Grafo('G1')
 
 # Criação de vértices 
-v1 = Vertice('V1')
-v2 = Vertice('V2')
-v3 = Vertice('V3')
-v4 = Vertice('V4')
-v5 = Vertice('V5')
-v6 = Vertice('V6')
+v1 = vertice.Vertice('V1')
+v2 = vertice.Vertice('V2')
+v3 = vertice.Vertice('V3')
+v4 = vertice.Vertice('V4')
+v5 = vertice.Vertice('V5')
+v6 = vertice.Vertice('V6')  
 
 grafo.adicionar_vertice(v1)
 grafo.adicionar_vertice(v2)
@@ -43,3 +43,6 @@ print(f"{grafo.nome}: {grafo.numero_de_vertices()} vertice(s) :{grafo}")
 
 for vertice in grafo.vertices:
   print(f"{vertice.nome}: {vertice.numero_de_arestas()} aresta(s): {vertice.arestas}")
+
+print("--- Iniciando busca em largura ---")
+Busca.largura(grafo.vertices[0])

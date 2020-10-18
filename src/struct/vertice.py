@@ -13,3 +13,4 @@ class Vertice:
 
   def __repr__(self):
     return f"{self.nome}"
+    # return f"{self.nome}: {self.numero_de_arestas()} aresta(s): {self.arestas}"
