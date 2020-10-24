@@ -30,12 +30,6 @@ class Grafo:
     return True
   
   def ehConexo(self) -> bool:
-    """
-      # Aplica a busca em largura 
-      # Se existir algum vértice que não foi visitado 
-      # depois da busca em largura
-      # então o grafo é desconexo
-    """
     Busca.largura(self.vertices[0])
     for vertice in self.vertices:
       if vertice.visitado == False:
