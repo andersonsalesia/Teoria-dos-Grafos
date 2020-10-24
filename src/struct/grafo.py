@@ -1,4 +1,5 @@
 from .vertice import Vertice
+from utils.util import Busca 
 
 class Grafo:
   def __init__(self, nome):
@@ -29,7 +30,19 @@ class Grafo:
     return True
   
   def ehConexo(self) -> bool:
-    pass
+    """
+      # Aplica a busca em largura 
+      # Se existir algum vértice que não foi visitado 
+      # depois da busca em largura
+      # então o grafo é desconexo
+    """
+    Busca.largura(self.vertices[0])
+    for vertice in self.vertices:
+      if vertice.visitado == False:
+        print(f"{vertice.nome}(visitado={vertice.visitado}) depois da largura")
+        return False
+    return True
+    
 
-  #  def __repr__(self) -> None:
-    #  return f"{self.vertices}"
+  def __repr__(self):
+    return f"{self.vertices}"

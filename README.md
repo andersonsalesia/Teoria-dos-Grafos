@@ -26,11 +26,11 @@ vértices i.
 ## Implementações ✅
 - [x] Representação do Grafo
 - - [x] Estrutura de adjacência
-- [] . Métodos básicos
-- - [] 1. getAdjacentes: retorna a lista de adjacentes de um vértice passado como parâmetro.
-- - [] 2. ehRegular: verifica se um determinado grafo é regular ou não. Deve retornar True ou False a depender do grafo.
-- - [] 3. ehCompleto: verifica se um determinado grafo é completo ou não. Deve retornar True ou False a depender do grafo.
-- - [] 4. ehConexo: verifica se um determinado grafo é conexo ou não. Deve retornar True ou False a depender do grafo. Deve utilizar busca em largura ou busca em profundidade para fazer essa verificação.
+- [x] . Métodos básicos
+- - [x] 1. getAdjacentes: retorna a lista de adjacentes de um vértice passado como parâmetro.
+- - [x] 2. ehRegular: verifica se um determinado grafo é regular ou não. Deve retornar True ou False a depender do grafo.
+- - [x] 3. ehCompleto: verifica se um determinado grafo é completo ou não. Deve retornar True ou False a depender do grafo.
+- - [x] 4. ehConexo: verifica se um determinado grafo é conexo ou não. Deve retornar True ou False a depender do grafo. Deve utilizar busca em largura ou busca em profundidade para fazer essa verificação.
 - [] Algoritmos
 - - Algoritmo de Menor Caminho (Dijkstra): deve implementar o algoritmo de Dijkstra que calcula o menor caminho de um vértice a outro no grafo.
 Devem ser implementados duas versões desse algoritmo:
