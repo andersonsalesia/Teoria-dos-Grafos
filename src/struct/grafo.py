@@ -13,7 +13,7 @@ class Grafo:
     return len(self.vertices)
 
   def getAdjacentes(self, vertice: Vertice) -> list:
-    return vertice.arestas
+    return vertice.adj
   
   def ehRegular(self) -> bool:
     primeiro_vertice = self.vertices[0]
@@ -36,7 +36,6 @@ class Grafo:
         print(f"{vertice.nome}(visitado={vertice.visitado}) depois da largura")
         return False
     return True
-    
 
   def __repr__(self):
     return f"{self.vertices}"
